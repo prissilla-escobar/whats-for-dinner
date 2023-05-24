@@ -8,3 +8,22 @@ red - #ee5253
 
 */
 
+body {
+    background-image: url(assets/burger-friends.jpg);
+    background-size:cover;
+    margin: 0px;
+}
+
+.main-bar {
+    position: relative;
+    background-color: #0fb9b1;
+    padding: 15;
+}
+
+.add-button-right {
+    text-align: right;
+}
+
+.nav-text {
+    position: absolute;
+}
