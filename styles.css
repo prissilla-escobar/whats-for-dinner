@@ -15,15 +15,23 @@ body {
 }
 
 .main-bar {
-    position: relative;
+    position: center;
     background-color: #0fb9b1;
-    padding: 15;
+    padding: 10;
+    align-content: center;
 }
 
 .add-button-right {
     text-align: right;
 }
 
+.add-button {
+    padding: 5px;
+    border: 0;
+    border-radius:4px;
+}
+
 .nav-text {
     position: absolute;
+    margin: 4px;
 }
