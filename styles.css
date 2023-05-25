@@ -35,3 +35,12 @@ body {
     position: absolute;
     margin: 4px;
 }
+
+article {
+    margin: 75;
+    padding: 2rem;
+    width: 375px;
+    height: 300px;
+    background-color: rgba(225, 225, 225, .9);
+    text-align: left;
+}
