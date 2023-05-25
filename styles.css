@@ -12,6 +12,7 @@ body {
     background-image: url(assets/burger-friends.jpg);
     background-size:cover;
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-bar {
@@ -34,13 +35,39 @@ body {
 .nav-text {
     position: absolute;
     margin: 4px;
+    font-weight: 900;
 }
 
-article {
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
     margin: 75;
     padding: 2rem;
     width: 375px;
     height: 300px;
     background-color: rgba(225, 225, 225, .9);
     text-align: left;
+}
+.second-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pot {
+    /* padding: 100px; */
+    width: 100px;
+    height: 150px;
+}
+
+.cook-button {
+    background-color:#0fb9b1;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius:4px;
+    width: 150px;
+    height: 30px;
 }
