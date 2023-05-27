@@ -15,6 +15,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.hidden {
+    display: none!important;
+}
+
 .main-bar {
     position: center;
     background-color: #0fb9b1;
@@ -51,6 +55,12 @@ span {
     background-color: rgba(225, 225, 225, .9);
     text-align: left;
 }
+
+.required:after {
+    content: "*";
+    color: #ee5253;
+}
+
 .second-box {
     display: flex;
     justify-content: space-around;
