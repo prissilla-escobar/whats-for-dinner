@@ -16,14 +16,17 @@
     <section>
       <div class="boxes">
         <span>
-          <h2>What are you looking for?*</h2>
-          <input type="radio" class="side-dish" value="Side">Side<br><br>
-          <input type="radio" class="main-dish" value="main">Main Dish<br><br>
-          <input type="radio" class="dessert" value="dessert">Dessert<br><br>
-          <input type="radio" class="entire-meal" value="entire-meal">Entire Meal<br><br>
+          <h2 class="required">What are you looking for?</h2>
+          <form class="dish-buttons">
+            <input type="radio" name="option" id="side-dish" value="Side" required>Side<br><br>
+            <input type="radio" name="option" id="main-dish" value="main">Main Dish<br><br>
+            <input type="radio" name="option" id="dessert" value="dessert">Dessert<br><br>
+            <input type="radio" name="option" id="entire-meal" value="entire-meal">Entire Meal<br><br>
+          </form>
           <button class="cook-button" type="button">LET'S COOK!</button>
         </span>
-        <span class="second-box"><img class="pot" src=assets/cookpot.svg></span>
+        <span class="second-box"><img class="pot" src=assets/cookpot.svg>
+        <h1 class="dish-suggestion hidden">Display Selection</h1></span>
       </div>>
     </section>
   </body>
