@@ -1,4 +1,5 @@
 // query selectors
+
 var letsCookButton = document.querySelector(".cook-button")
 var potImage = document.querySelector(".pot")
 var dishSuggestion = document.querySelector(".dish-suggestion")
@@ -60,15 +61,9 @@ var desserts = [
     "Eclairs"
 ]
 
-var mainOption = mains[getRandomIndex(mains)]
-var dessertOption = desserts[getRandomIndex(desserts)]
-var sideOption = sides[getRandomIndex(sides)]
-
-
-
 // event listeners
-letsCookButton.addEventListener("click", displayDish)
 
+letsCookButton.addEventListener("click", displayDish)
 
 
 // functions
@@ -92,9 +87,8 @@ function displayDish() {
     } else if (dessertButton.checked) {
         hidePot()
         dishSuggestion.innerText = desserts[getRandomIndex(desserts)]
-    // } else if (entireMealButton.checked) {
-    //     hidePot()
-    //     dishSuggestion.innerText = 
+    } else if (entireMealButton.checked) {
+        hidePot()
+        dishSuggestion.innerText = `${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]} for dessert!`
     }
 }
-
